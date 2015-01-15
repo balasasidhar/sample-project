@@ -1,0 +1,34 @@
+{
+  "name": "Sample-Project",
+  "version": "0.0.0",
+  "description": "My First JADE, LESS and KNOCKOUT JS Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasidhar678/sample-project.git"
+  },
+  "keywords": [
+    "jade",
+    "less",
+    "and",
+    "knockout"
+  ],
+  "author": "Sasidhar Kola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasidhar678/sample-project/issues"
+  },
+  "homepage": "https://github.com/sasidhar678/sample-project",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.14.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jade": "^1.9.0",
+    "less": "^2.2.0"
+  }
+}

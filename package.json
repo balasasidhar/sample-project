@@ -24,6 +24,7 @@
   "homepage": "https://github.com/sasidhar678/sample-project",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-jade": "^0.14.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-less": "^1.0.0",

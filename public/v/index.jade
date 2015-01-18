@@ -1,7 +1,23 @@
 doctype html
 html
     head
+        include include/styles
+        include include/scripts
         title Test Project
-    body
-        h1 Welcome to my test project
-        h3 hi
+    body.container
+        .page-header 
+            h1 Welcome to SMAPS Online Portal
+        form.col-sm-4.col-sm-offset-4.panel.panel-primary.no-padding
+            .panel-heading
+                h4.no-margin Login with your account
+            .panel-body
+                .form-group
+                    label(for="username") Email address
+                    input.form-control(type="email", placeholder="username@example.com")
+                .form-group
+                    label(for="password") Password
+                    input.form-control(type="password", placeholder="password")
+                button.btn.btn-primary.btn-lg.col-sm-8.col-sm-offset-2.mar-bt-20 Sign In
+                    
+            
+            

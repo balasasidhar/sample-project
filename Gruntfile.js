@@ -23,10 +23,21 @@ module.exports = function(grunt){
             compile : {
                 files : [{
                     expand : true,
-                    cwd : './public/l/',
-                    src : ['**/*.less'],
+                    cwd : './public/l/src',
+                    src : ['base.less'],
                     dest : './build/css',
                     ext : '.css'
+                }]
+            }
+        },
+        
+        copy :{
+            scripts : {
+                files :[{
+                    expand : true,
+                    cwd : './public/j/',
+                    src : '**',
+                    dest : './build/js'
                 }]
             }
         },
@@ -39,7 +50,12 @@ module.exports = function(grunt){
             less : {
                 files : ['./public/l/**/*.less'],
                 tasks : ['less']
-            }
+            },
+            copy :{
+                files : ['./public/j/**/*.js'],
+                tasks : ['copy']
+            },
+            
         }
         
         
@@ -48,7 +64,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    
-    grunt.registerTask('default',['jade','less','watch']);
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.registerTask('default',['jade','less','copy','watch']);
     
 };
